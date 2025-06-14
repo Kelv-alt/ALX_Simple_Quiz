@@ -1,7 +1,7 @@
 function checkAnswer() {
     const correctAnswer = "4"; // Example correct answer
 
-    const selectedOption = document.querySelector('input[name="answer"]:checked');
+    const selectedOption = document.querySelector('input[name="quiz"]:checked');
 
     if (selectedOption) {
         const userAnswer = selectedOption.value;
@@ -16,5 +16,5 @@ function checkAnswer() {
     }
 }
 
-const submitButton = document.getElementById("submit-btn");
+const submitButton = document.getElementById("submit-answer");
 submitButton.addEventListener("click", checkAnswer);
